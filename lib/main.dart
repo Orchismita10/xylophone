@@ -8,16 +8,16 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  void Sound(int n){
-    final Player= AudioCache();
-    Player.play('note$n.wav');
+  void sound(int n){
+    final player= AudioCache();
+    player.play('note$n.wav');
   }
 
   Expanded button({required Color color, required int n}){
     return Expanded(
       child: GestureDetector(
         onTap: (){
-          Sound(n);
+          sound(n)ound(n);
         },
         child: Container(
           child: const Text(
