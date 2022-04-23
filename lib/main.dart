@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return Expanded(
       child: GestureDetector(
         onTap: (){
-          sound(n)ound(n);
+          sound(n);
         },
         child: Container(
           child: const Text(
